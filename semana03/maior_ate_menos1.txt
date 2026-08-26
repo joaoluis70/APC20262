@@ -1,0 +1,27 @@
+inicio	INP
+	STA maior	
+	
+loop	INP
+	STA numero
+
+	LDA numero
+	SUB neg_um
+	BRZ fim
+
+	LDA numero
+	SUB maior
+	BRP no_ma
+
+	BRA loop
+
+no_ma	LDA numero
+        STA maior
+        BRA loop
+
+fim 	LDA maior
+	OUT
+	HLT
+	
+maior	DAT 0
+numero 	DAT 0
+neg_um 	DAT -1
