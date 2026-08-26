@@ -1,0 +1,20 @@
+inicio	INP
+	STA numero
+	LDA numero
+	SUB neg_um
+	BRZ fim
+	
+	LDA cont
+	ADD um
+	STA cont
+	
+	BRA inicio
+	
+fim	LDA cont
+	OUT 
+	HLT
+
+um 	DAT 1
+cont	DAT 0
+numero  DAT 0
+neg_um	DAT -1
