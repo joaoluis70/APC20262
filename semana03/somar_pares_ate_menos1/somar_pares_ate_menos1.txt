@@ -1,0 +1,34 @@
+inicio    INP
+          STA numero
+
+          LDA numero
+          SUB neg_um
+          BRZ fim
+
+          LDA numero
+          STA resto
+
+verifica  LDA resto
+          SUB dois
+          STA resto
+
+          BRZ par
+          BRP verifica
+          BRA impar
+
+par       LDA soma
+          ADD numero
+          STA soma
+          BRA inicio
+
+impar     BRA inicio
+
+fim       LDA soma
+          OUT
+          HLT
+
+soma      DAT 0
+numero    DAT 0
+resto     DAT 0
+dois      DAT 2
+neg_um    DAT -1
