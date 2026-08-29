@@ -1,0 +1,23 @@
+inicio  INP
+        BRZ fim
+        BRP positivo
+
+        LDA negativos
+        ADD um
+        STA negativos
+        BRA inicio
+
+positivo LDA positivos
+        ADD um
+        STA positivos
+        BRA inicio
+
+fim     LDA positivos
+        OUT
+        LDA negativos
+        OUT
+        HLT
+
+um      DAT 1
+positivos DAT 0
+negativos DAT 0
