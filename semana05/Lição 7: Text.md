@@ -29,7 +29,7 @@ text("Oh! Butterflies", 270, 200);
 
 ##Desafio 1
 
-javascript
+```javascript
 var sky = createSprite(200,200);
 sky.setAnimation("rainbow");
 drawSprites();
@@ -43,4 +43,5 @@ text("sky...", 110, 150);
 fill("green");
 textSize(20);
 text("Clouds are so cool!", 200, 250);
-
+```
+##Desafio 2
