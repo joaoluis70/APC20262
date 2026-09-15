@@ -45,3 +45,12 @@ textSize(20);
 text("Clouds are so cool!", 200, 250);
 ```
 ##Desafio 2
+
+```javascript
+fill("white");
+stroke("black");
+strokeWeight(3);
+textSize(20);
+text("Four score and seven years ago...", 30, 200);
+```
+##Desafio 3
