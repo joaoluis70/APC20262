@@ -26,7 +26,7 @@ text("Oh! Butterflies", 270, 200);
 ```
 
 # Desafio
-
+//A atividade foi bem intuitiva. Os exercícios anteriores contribuiram para a sua finalização.
 ##Desafio 1
 
 ```javascript
