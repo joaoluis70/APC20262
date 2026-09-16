@@ -85,3 +85,25 @@ function draw() {
 }
 ```
 # Desafio 3
+
+```javascript
+var alien = createSprite(200, 200);
+alien.setAnimation("alienBlue_duck_1");
+var planet = createSprite(250, 300);
+planet.scale = 0.3;
+planet.setAnimation("planet11_1");
+var ufo = createSprite(200, 100);
+ufo.setAnimation("ufo_1");
+ufo.scale = 0.2;
+function draw() {
+  background("black");
+  fill("yellow");
+  stroke("blue");
+  textSize(12);
+  text("It´s a nice place to conquer!", 200, 160);
+  ufo.x = ufo.x + 1;
+  alien.rotation = alien.rotation + 5;
+  planet.rotation = planet.rotation - 5;
+  drawSprites();
+}
+```
