@@ -24,7 +24,7 @@ function draw() {
 ```
 
 ## Desafio
-//
+// Só tive dificuldades no desafio 3, pois os desenhos estavam gerando um rastro. Uma colega deu a dica de modificar o lugar do background color.
 # Desafio 1
 ```javascript
 var orangeFish = createSprite(400, randomNumber(0, 100));
