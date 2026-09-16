@@ -15,3 +15,29 @@ function draw() {
   drawSprites();
 }
 ```
+#Desafio
+//Tive facilidade em realizar a atividade.
+
+```javascript
+background("black");
+var alien = createSprite(200, 200);
+alien.setAnimation("alienBlue_duck_1");
+var planet = createSprite(250, 300);
+planet.scale = 0.3;
+planet.setAnimation("planet11_1");
+var ufo = createSprite(200, 100);
+ufo.setAnimation("ufo_1");
+ufo.scale = 0.2;
+drawSprites();
+textSize(12);
+stroke("blue");
+fill("yellow");
+text("It´s a nice place to conquer!", 200, 160);
+function draw() {
+  background("black");
+  alien.rotation = randomNumber(20, 100);
+  alien.x = randomNumber(200, 210);
+```
+  alien.y = randomNumber(230, 240);
+  drawSprites();
+}
