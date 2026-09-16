@@ -19,6 +19,8 @@ function draw() {
 # Desafio
 //Tive facilidade em realizar a atividade.
 
+## Desafio 1
+
 ```javascript
 background("black");
 var alien = createSprite(200, 200);
