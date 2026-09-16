@@ -27,7 +27,7 @@ text("Oh! Butterflies", 270, 200);
 
 # Desafio
 //A atividade foi bem intuitiva. Os exercícios anteriores contribuiram para a sua finalização.
-##Desafio 1
+## Desafio 1
 
 ```javascript
 var sky = createSprite(200,200);
@@ -44,7 +44,7 @@ fill("green");
 textSize(20);
 text("Clouds are so cool!", 200, 250);
 ```
-##Desafio 2
+## Desafio 2
 
 ```javascript
 fill("white");
