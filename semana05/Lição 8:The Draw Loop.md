@@ -41,6 +41,17 @@ function draw() {
   alien.rotation = randomNumber(20, 100);
   alien.x = randomNumber(200, 210);
 ```
-  alien.y = randomNumber(230, 240);
+## Desafio 2
+```javascript
+background("skyblue");
+var cloud = createSprite(200, 100);
+cloud.setAnimation("cloud_1");
+var plane1 = createSprite(200, 200);
+plane1.setAnimation("planeBlue1_1");
+function draw() {
+  cloud.x = randomNumber(200, 203);
+  cloud.scale = 0.2;
+  plane1.x = randomNumber(200, 205);
   drawSprites();
 }
+```
