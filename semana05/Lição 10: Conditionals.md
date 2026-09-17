@@ -23,6 +23,7 @@ function draw() {
 }
 ```
 ## Desafio
+# Desafio 1
 
 ```javascript
 var balloon = createSprite(200, 200);
@@ -43,6 +44,29 @@ function draw() {
     pop.visible = true;
   }
 
+  drawSprites();
+}
+```
+# Desafio 2
+```javascript
+var balloon = createSprite(200, 200);
+balloon.setAnimation("beachball_1");
+balloon.scale = 0.1;
+
+var pop = createSprite(200, 200);
+pop.setAnimation("animation_1");
+pop.visible = false;
+
+function draw() {
+  background("white");
+ 
+  balloon.scale = balloon.scale + 0.001;
+ 
+  if (balloon.scale >= 0.5) {
+    balloon.visible = false;
+    pop.visible = true;
+  }
+ 
   drawSprites();
 }
 ```
