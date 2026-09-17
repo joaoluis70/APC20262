@@ -22,3 +22,27 @@ function draw() {
   drawSprites();
 }
 ```
+## Desafio
+
+```javascript
+var balloon = createSprite(200, 200);
+balloon.setAnimation("balloon");
+balloon.scale = 0.1;
+
+var pop = createSprite(200, 200);
+pop.setAnimation("pop");
+pop.visible = false;
+
+function draw() {
+  background("white");
+
+  balloon.scale = balloon.scale + 0.001;
+
+  if (balloon.scale >= 0.5) {
+    balloon.visible = false;
+    pop.visible = true;
+  }
+
+  drawSprites();
+}
+```
