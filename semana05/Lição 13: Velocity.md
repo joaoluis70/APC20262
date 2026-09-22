@@ -1,2 +1,30 @@
 Lição 13: Velocity
 
+#AVALIAÇÃO
+
+```
+var fish = createSprite(200, 200);
+fish.setAnimation("fishR");
+fish.velocityX = 4;
+
+function draw() {
+  background("blue");
+
+  if (keyWentDown("right")) {
+    fish.velocityX = 4;
+    fish.setAnimation("fishR");
+  }
+
+  if (fish.x > 400) {
+    fish.velocityX = -4;
+    fish.setAnimation("fishL");
+  }
+
+  if (fish.x < 0) {
+    fish.velocityX = 0;
+    fish.setAnimation("fishL");
+  }
+```
+
+  drawSprites();
+}
