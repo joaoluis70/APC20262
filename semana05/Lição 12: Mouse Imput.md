@@ -1,6 +1,7 @@
 Lição 12: Mouse Imput
 
 #AVALIAÇÃO
+// Avaliação foi realizada de forma bem tranquila.
 ```
 var backdrop = createSprite(200,200);
 backdrop.setAnimation("sky");
@@ -27,7 +28,7 @@ function draw() {
 }
 ```
 #DESAFIO
-
+// Tive dificuldade em organizar o código do desafio 5.
 ##DESAFIO 1
 
 ```
@@ -106,8 +107,55 @@ function draw() {
 
 ##DESAFIO 4
 ```
+var salt = createSprite(200, 200);
+salt.setAnimation("salt");
+salt.rotation = 150;
+
+function draw() {
+  background("skyblue");
+  
+  if (mouseDidMove()) {
+    salt.rotation = randomNumber(180, 200);
+  }
+  
+  drawSprites();
+}
 ```
 
 ##DESAFIO 5
 ```
+var cake = createSprite(200, 250);
+cake.setAnimation("cake");
+cake.scale = 0.4;
+
+var ball = createSprite(100, 150);
+ball.setAnimation("ball");
+ball.scale = 0.3;
+
+var gift = createSprite(300, 300);
+gift.setAnimation("gift");
+gift.scale = 0.4;
+
+function draw() {
+  background("lightblue");
+
+  fill("black");
+  textSize(30);
+  text("Feliz Aniversário!", 80, 60);
+
+  ball.x = World.mouseX;
+  ball.y = World.mouseY;
+
+  if (World.mouseX > 170 && World.mouseX < 230 &&
+      World.mouseY > 220 && World.mouseY < 280) {
+    cake.rotation = cake.rotation + 5;
+  }
+
+  if (World.mouseX > 270 && World.mouseX < 330 &&
+      World.mouseY > 270 && World.mouseY < 330) {
+    gift.rotation = gift.rotation + 5;
+  }
+
+  drawSprites();
+}
 ```
