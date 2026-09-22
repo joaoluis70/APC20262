@@ -26,7 +26,7 @@ function draw() {
 }
 ```
 #DESAFIO
-\\ Tive dificuldade em enteder que era pra criar 4 cópias do inseto em animações. Quando descobri ficou fácil.
+// Tive dificuldade em enteder que era pra criar 4 cópias do inseto em animações. Quando descobri ficou fácil.
 ##DESAFIO 1
 
 ```javascript
