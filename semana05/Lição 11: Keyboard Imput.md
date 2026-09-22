@@ -26,7 +26,7 @@ function draw() {
 }
 ```
 #DESAFIO
-
+\\ Tive dificuldade em enteder que era pra criar 4 cópias do inseto em animações. Quando descobri ficou fácil.
 ##DESAFIO 1
 
 ```javascript
@@ -45,5 +45,38 @@ function draw() {
 
 ##DESAFIO 2
 
+```javascript
+var bug = createSprite(200, 200);
+bug.setAnimation("fly");
 
+function draw() {
+  //Draw Background
+  background("white");
+  
+  // Update Values
+  if(keyDown("up")){
+    bug.y = bug.y - 5;
+    bug.setAnimation("fly_up");
 
+  }
+  if(keyDown("down")){
+    bug.y = bug.y + 5;
+    bug.setAnimation("fly_down");
+
+  }
+  if(keyDown("left")){
+    bug.x = bug.x - 5;
+    bug.setAnimation("fly_left");
+  }
+  if(keyDown("right")){
+    bug.x = bug.x + 5;
+    bug.setAnimation("fly_right");
+  }
+
+  //Draw Animations
+  drawSprites();
+}
+```
+##DESAFIO 3 
+
+```javascript
