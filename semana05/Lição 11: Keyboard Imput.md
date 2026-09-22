@@ -80,3 +80,34 @@ function draw() {
 ##DESAFIO 3 
 
 ```javascript
+var fish = createSprite(200,200);
+fish.setAnimation("fish");
+fish.scale = 0.5;
+
+var shell = createSprite(300, 350);
+shell.setAnimation("shell");
+shell.scale = 0.2;
+drawSprites();
+
+function draw() {
+  background("blue");
+  if (keyDown("left")) {
+    fish.x = fish.x - 5;
+    fish.setAnimation("fish_left");
+  }
+  if (keyDown("right")) {
+    fish.x = fish.x + 5;
+    fish.setAnimation("fish_right");
+  }
+  if (keyDown("up")) {
+    fish.y = fish.y - 5;
+    fish.setAnimation("fish_up");
+  }
+  if (keyDown("down")) {
+    fish.y = fish.y + 5;
+    fish.setAnimation("fish_down");
+  }
+  
+  drawSprites();
+}
+```
