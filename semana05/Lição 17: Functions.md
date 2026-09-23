@@ -2,7 +2,7 @@ Lição 17: Functions
 
 #AVALIAÇÃO
 
-//
+// A atividade foi de fácil resolução.
 
 ```
 var coin = createSprite(200, 10);
@@ -82,7 +82,7 @@ function sillyBackground() {
 
 #DESAFIO
 
-//
+//Gostei de realizar os desafios, e adicionar novas funcionalidades para o projeto foi bem intuitivo.
 ##DESAFIO 1
 ```
 function draw() {
