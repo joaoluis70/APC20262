@@ -1,3 +1,4 @@
+```c
 #include <stdio.h>
 
 int mult(int a, int b){
@@ -13,3 +14,4 @@ int main(void){
     printf("%d\n", resultado);
     return 0;
 }
+```
