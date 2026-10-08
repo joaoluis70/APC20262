@@ -1,4 +1,4 @@
-### 🔬 Exercício 2 — Tamanhos e promoção
+## Exercício 2 — Tamanhos e promoção
 
 ```c
 #include <stdio.h>
