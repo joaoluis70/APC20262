@@ -1,3 +1,4 @@
+```c
 #include <stdio.h>
 
 int main(void) {
@@ -8,4 +9,4 @@ int main(void) {
     } while (n < 32);
     return 0;
 }
-
+```
