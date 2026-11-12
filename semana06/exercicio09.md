@@ -1,9 +1,14 @@
 ##Ponteiros
 
 ```c
-int  x  = 10;
-int *p  = &x;        /* p guarda o endereço de x; tipo: int* */
-*p = 20;             /* derreferência: acessa/modifica o objeto apontado */
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+  int main(void) {
+  int  x  = 10;
+  int *p  = &x;        /* p guarda o endereço de x; tipo: int* */
+  *p = 20;             /* derreferência: acessa/modifica o objeto apontado */
 
 /* Ponteiro nulo — "não aponta para nada" */
 int *q = NULL;        /* ou: int *q = 0; */
